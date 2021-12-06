@@ -1,9 +1,17 @@
+/*
+Emily Vorng
+CSCI151 - Mad Libs
+Takes in 12 different words from the user and prints out the mad lib 
+story with the input words.
+*/
 #include <iostream>
 #include <string>
 
 int main() {
+    // Creates an array for the replacement words
     std::string words[12];
 
+    // Prompts the user for 12 different words and initializes the 12 elements in the array 
     std::cout << "Give me an adjective: ";
     std::cin >> words[0];
 
@@ -40,6 +48,7 @@ int main() {
     std::cout << "Give me a proper noun: ";
     std::cin >> words[11];
 
+    // Prints out the mad lib story using the replacement words
     std::cout << "I want to create a(n) " << words[0] << " " << words[1] << " that can " << words[2] << ".\n";
     std::cout << "I shall call it " << words[3] << ".\n";
     std::cout << words[3] << " will be so great that it'll also " << words[4] << " better than any other " << words[1] << ".\n";
